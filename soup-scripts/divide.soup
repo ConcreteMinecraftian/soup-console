@@ -1,0 +1,8 @@
+v new num dividend -s -e
+v new num divisor -s -e
+v del dividend -e
+calc divide %dividend% %divisor% -v
+echo Quotient:-_%result%
+calc mod %dividend% %divisor% -v
+echo Remainder:-_%result%
+v del divisor -e
